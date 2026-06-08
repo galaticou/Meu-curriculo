@@ -1,0 +1,116 @@
+\documentclass[
+  a4paper,
+%  sidebarwidth=0.33\paperwidth,
+%  topbottommargin=0.04\paperheight,
+%  leftrightmargin=20pt
+]{fortysecondscv}
+
+
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{microtype}
+\usepackage{soul}
+
+\ifxetex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+    \usepackage[sfdefault]{noto}
+\fi
+
+\usepackage{amssymb}
+
+\usepackage{smartdiagram}
+\smartdiagramset{
+  bubble center node font = \footnotesize,
+  bubble node font = \footnotesize,
+  bubble center node size = 0.4\sidebartextwidth,
+  bubble node size = 0.25\sidebartextwidth,
+  distance center/other bubbles = 1.5em,
+  bubble center node color = maincolor!70,
+  set color list = {maincolor!10, maincolor!40,
+  maincolor!20, maincolor!60, maincolor!35},
+  bubble fill opacity = 0.8,
+}
+
+\cvprofilepic{icon.png}
+
+\cvjobtitle{Graduando em Astronomia}
+
+\cvbirthday{29 / 11 / 2004}
+
+\cvaddress{Rio de Janeiro, RJ}
+
+\cvphone{+55 (21) 97066-7273}
+
+\cvsite{}
+
+\cvmail{caue.9956@gmail.com}
+
+\addtofrontsidebar{
+	\graphicspath{{pics/flags/}}
+
+	\profilesection{Idiomas}
+		\pointskill{\flag{BR.png}}{Português}{5}
+  	\pointskill{\flag{EUA.png}}{Inglês}{2}
+  	
+
+	\profilesection{Habilidades}
+        \pointskill{\faCode}{Python}{2}
+        \pointskill{\faCode}{LaTeX}{1}
+        \pointskill{\faPaintBrush}{Canva}{4}
+        \pointskill{\faFile}{Office}{4}
+    \pointskill{\faFile}{Workspace}{4}
+        
+    \profilesection{Soft Skills}
+        \skill{\faComments}{Comunicação assertiva}
+        \skill{\faUsers}{Trabalho em equipe}
+        \skill{\faPencilSquareO}{Produção interdisciplinar}
+        \skill{\faLightbulbO}{Análise crítica}
+        \skill{\faLightbulbO}{Resolução de problemas}
+        \skill{\faWrench}{Resiliência no aprendizado de novas ferramentas}
+    \skill{\faClockO}{Organização}
+
+}
+
+\begin{document}
+
+\makefrontsidebar
+
+\vspace*{-1em}
+
+\begin{center}
+
+{\fontsize{30}{34}\selectfont\bfseries\color{maincolor}\textls[80]{Cauê Barros Martins}}
+\end{center}
+\vspace{0.6em}
+{\color{maincolor}\rule{0.95\textwidth}{1pt}}
+\vspace{1.8em}
+
+\cvsection{Experiência}
+\begin{cvtable}
+	\cvitem{2024 -- Atual}{Museu de Astronomia e Ciências Afins \color{sectioncolor}{\faInstitution}}{}{Desenvolvimento de projeto de iniciação científica na área de História da Ciência, com foco na análise de textos históricos relacionados à astronomia. O trabalho envolve interpretação de conceitos de astronomia de posição, pesquisa interdisciplinar e produção de relatórios acadêmicos com rigor historiográfico.}
+\end{cvtable}
+
+\vspace{0.5em}
+
+\cvsection{Educação}
+\begin{cvtable}
+	\cvitem{2023 -- Atual}{Universidade Federal do Rio de Janeiro \color{sectioncolor}{\faMortarBoard}}{}{Bacharelado em Astronomia}
+\end{cvtable}
+
+\vspace{0.5em}
+
+\cvsection{Condecorações}
+\begin{cvtable}
+	
+	\cvitem{2025}{Museu de Astronomia e Ciências Afins \color{sectioncolor}{\faInstitution}}{}{Menção Honrosa na XXX Jornada de Iniciação Científica}
+	
+\end{cvtable}
+
+\vspace{0.5em}
+    
+\end{document}
